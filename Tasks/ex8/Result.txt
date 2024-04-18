@@ -1,0 +1,6 @@
+1)Binwalk: paměť obsahuje obrázek ev formátu JPG dlouhý 262144B a Squash FileSystem velký 7201786 B. FOrmát Little Endian,komprimováno pomocí GZIP
+2)unsquashfs: útočník používal uživatelské jméno hax0r. Systém byl zřejmě Linux Fedora
+3)soubor root/.ash_history: útočník se pokoušel odposlouchávat komunikaci www,emaily,FTP,vzdálenou správu a telnet.
+4)Použil Apache server,síť TOR,
+5)John The RIpper: heslo v šifrované podobě pomocí Apache algoritmu s MD5: $apr1$fq/6G8Ho$7t6/BNSRH9vPlFBx50O5W0 Podle všeho jeho plaintext je "qwert".
+6)SOudě podle počtu TTY jednotek používal SSH/Telnet k připojení

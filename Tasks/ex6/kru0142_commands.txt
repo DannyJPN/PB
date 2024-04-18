@@ -1,0 +1,182 @@
+    1  usermod danny -aG sudo
+    2  apt update
+    3  apt full-upgrade 
+    4  ls /dev/sd*
+    5  shutdown now
+    6  fdisk /dev/sdb
+    7  shutdown now
+    8  ls /dev/sd*
+    9  mkfs.ext4 /dev/sdb1
+   10  mkdir /clouddrive/OneDrive -p
+   11  mkdir /clouddrive/GDrive -p
+   12  mkdir /clouddrive/Torrent -p
+   13  cd /clouddrive/
+   14  rm -rfv *
+   15  mount /clouddrive /dev/sdb1
+   16  mount /dev/sdb1 /clouddrive 
+   17  nano /etc/fstab
+   18  mkdir /clouddrive/Torrent -p
+   19  mkdir /clouddrive/GDrive -p
+   20  mkdir /clouddrive/OneDrive -p
+   21  exit
+   22  ls /clouddrive/
+   23  ls /-al
+   24  ls / -al
+   25  id
+   26  su
+   27  firefox --private-window dropbox.com &
+   28  mkdir Dropbox
+   29  ls
+   30  mv Stažené/* Dropbox/
+   31  ls Dropbox/
+   32  cd D
+   33  cd Dropbox/
+   34  unzip UNI.zip 
+   35  ls
+   36  ls uni
+   37  ls UNI
+   38  cd UNI
+   39  ls
+   40  cd VSB
+   41  ls
+   42  cd ..
+   43  cd..
+   44  cd ..
+   45  find ./
+   46  ls
+   47  cat MD5\ -\ Wikipedia.html 
+   48  mv Stažené/* Dropbox/
+   49  mv ~/Stažené/* ~/Dropbox/
+   50  ls
+   51  rm -rfv MD*
+   52  rm -rfv uni
+   53  rm -rfv UNI
+   54  ls
+   55  unzip Scripts.zip 
+   56  ls
+   57  ls -R
+   58  rm -rfv scripts/
+   59  unzip Scripts.zip 
+   60  ls
+   61  rm -rfv Scripts
+   62  man enc
+   63  openssl enc -ciphers
+   64  openssl enc -e -des-ecb -in 
+   65  cp scripts/PowerShell/IPgen.ps1  IPgen.ps1
+   66  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 
+   67  enc --help
+   68  openssl enc --help
+   69  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889900aaabbbcccdddeeefff -iv 1234567890abcdef
+   70  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889900aabbccddeeff -iv 1234567890abcdef
+   71  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889900aabbccddeeff 
+   72  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889900aabbccdd
+   73  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889900aabbccd
+   74  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889900aabbcc
+   75  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889900aabbc
+   76  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889900
+   77  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 11223344556677889
+   78  openssl enc -e -des-ecb -in IPgen.ps1 -out IPgen.des-ecb.bin -K 112233445566778
+   79  cat IPgen.des-ecb.bin 
+   80  gedit IPgen.des-ecb.bin 
+   81  gedit IPgen.des-ecb.bin  &
+   82  openssl enc -e -des-cbc -in IPgen.ps1 -out IPgen.des-cbc.bin -K 112233445566778
+   83  cat IPgen.des-cbc.bin 
+   84  openssl enc -e -des-cbc -in IPgen.ps1 -out IPgen.des-cbc.bin -K 11223344556677889900aabbccddeeff -iv 987654321abcdef
+   85  openssl enc -e -des-cbc -in IPgen.ps1 -out IPgen.des-cbc.bin -K 11223344556677889900aabbcc -iv 987654321abcdef
+   86  openssl enc -e -des-cbc -in IPgen.ps1 -out IPgen.des-cbc.bin -K 1122334455667788 -iv 987654321abcdef
+   87  cat IPgen.des-cbc.bin 
+   88  cat IPgen.des-ecb.bin 
+   89  ls
+   90  echo "Pouzito DES s mody cipher block chain  a electronic code book">>Notes.txt
+   91  cp ~/Stažené/pic_original.bmp pic_original.bmp
+   92  su
+   93  ls
+   94  openssl enc -e -aes-128-cbc -in pic_original.bmp -out pic_aes-128-cbc.bmp -K 11223344556677889900aabbcc -iv 987654321abcdef
+   95  openssl enc -e -aes-128-ecb -in pic_original.bmp -out pic_aes-128-ecb.bmp -K 11223344556677889900aabbcc -iv 987654321abcdef
+   96  openssl enc -e -aes-128-ecb -in pic_original.bmp -out pic_aes-128-ecb.bmp -K 11223344556677889900aabbcc 
+   97  hexdump pic_original.bmp 
+   98  hexdump pic_original.bmp | head -c 5
+   99  hexdump pic_original.bmp | head -c 54
+  100  hexdump pic_aes-128-cbc.bmp | head -c 54
+  101  hexdump pic_aes-128-ecb.bmp | head -c 54
+  102  ghex pic*bmp
+  103  hexdump pic_original.bmp | head -c 54
+  104  hexdump pic_aes-128-ecb.bmp | head -c 54
+  105  hexdump pic_aes-128-cdc.bmp | head -c 54
+  106  hexdump pic_aes-128-cbc.bmp | head -c 54
+  107  ghex pic*bmp &
+  108  openssl enc -e -aes-128-ecb -in IPgen.ps1 -out IPgen_aes-128-ecb.ps1 -K 11223344556677889900aabbcc 
+  109  openssl enc -e -aes-128-cbc -in IPgen.ps1 -out IPgen_aes-128-cbc.ps1 -K 11223344556677889900aabbcc -iv 987654321abcdef
+  110  ls
+  111  ls -l
+  112  ghex IPgen_aes-128-* &
+  113  ghex pic_original.bmp &
+  114  ghex pic_aes-128-*bmp
+  115  ghex pic_aes-128-cbc.bmp &
+  116  ghex pic_aes-128-ecb.bmp &
+  117  ghex pic_aes-128*newhead*.bmp &
+  118  ghex pic_aes-128-ecb.bmp &
+  119  ghex pic_aes-128*newhead*.bmp &
+  120  ghex pic_aes-128-cbc.bmp &
+  121  hexdump pic_original.bmp | head -c 54
+  122  hexdump pic_aes-128-cbc-newhead.bmp | head -c 54
+  123  hexdump pic_aes-128-ecb-newhead.bmp | head -c 54
+  124  dd -help
+  125  dd --help
+  126  ls
+  127  cp pic_aes-128-cbc.bmp pic_cbc_new.bmp
+  128  cp pic_aes-128-ecb.bmp pic_ecb_new.bmp
+  129  dd dd -if=pic_original.bmp -of=pic_cbc_new.bmp
+  130  dd dd if=pic_original.bmp of=pic_cbc_new.bmp bs=54 conv=notrunc count=1
+  131   dd if=pic_original.bmp of=pic_cbc_new.bmp bs=54 conv=notrunc count=1
+  132  hexdump pic_original.bmp | head -c 54
+  133  hexdump pic_aes-128-cbc-newhead.bmp | head -c 54
+  134  hexdump pic_cbc_new.bmp | head -c 54
+  135  hexdump pic_original.bmp | head -c 56
+  136  hexdump pic_aes-128-cbc-newhead.bmp | head -c 56
+  137  hexdump pic_cbc_new.bmp | head -c 56
+  138  head --help
+  139  hexdump pic_original.bmp | head -n 2
+  140  hexdump pic_aes-128-cbc-newhead.bmp | head -n 2
+  141  hexdump pic_cbc_new.bmp | head -n 2
+  142  hexdump pic_original.bmp | head -n 3
+  143  hexdump pic_aes-128-cbc-newhead.bmp | head -n 3
+  144  hexdump pic_aes-128-cbc-newhead.bmp | head -n 3
+  145  hexdump pic_cbc_new.bmp | head -n 3
+  146   dd if=pic_original.bmp of=pic_ecb_new.bmp bs=54 conv=notrunc count=1
+  147  openssl enc -d -aes-128-cbc -in IPgen_aes-128-cbc.ps1 -out IPgen_cbc_decr.ps1 -K 11223344556677889900aabbcc -iv 987654321abcdef
+  148  openssl enc -e -aes-128-ecb -in IPgen_aes-128-ecb.ps1 -out IPgen_ecb_decr.ps1 -K 11223344556677889900aabbcc 
+  149  openssl enc -d -aes-128-ecb -in IPgen_aes-128-ecb.ps1 -out IPgen_ecb_decr.ps1 -K 11223344556677889900aabbcc 
+  150  ghex IPgen*dam* &
+  151  openssl enc -d -aes-128-cbc -in IPgen_aes-128-cbc.dam.ps1 -out IPgen_cbc_decr.ps1 -K 11223344556677889900aabbcc -iv 987654321abcdef
+  152  openssl enc -d -aes-128-ecb -in IPgen_aes-128-ecb.dam.ps1 -out IPgen_ecb_decr.ps1 -K 11223344556677889900aabbcc 
+  153  gedit IPgen*decr*
+  154  exit
+  155  ls
+  156  sudo apt updat
+  157  sudo apt update
+  158  openssl genrsa -out private.pem 1024
+  159  ls
+  160  cat private.pem 
+  161  openssl rsa -in private.pem 
+  162  openssl rsa -in private.pem -te
+  163  openssl rsa -in private.pem -text
+  164  firefox dropbox.com/home/uni/vsb/vsb/bc_ivt_III/S5/PB/Tasks/ex6 &
+  165  openssl rsa -in private.pem -des3 -out key3des.pem
+  166  cat key3des.pem 
+  167  openssl rsa -in private.pem -out public.pem
+  168  openssl rsa -in private.pem -out public.pem -outform PEM -pubout
+  169  ls
+  170  rm -rfv public.pem 
+  171  openssl rsa -in private.pem -out public.pem -outform PEM -pubout
+  172  cat public.pem 
+  173  cp ~/Stažené/IPgen.ps1 IPgen.ps1
+  174  ls
+  175  openssl dgst -sha256 -sign private.pem  -out IPgen.sha256 IPgen.ps1 
+  176  ls
+  177  cat IPgen.sha256 
+  178  openssl dgst -sha256 -verify public.pem -signature IPgen.sha256 IPgen.ps1 
+  179  echo "#">>IPgen.ps1
+  180  openssl dgst -sha256 -verify public.pem -signature IPgen.sha256 IPgen.ps1 
+  181  history
+  182  history>>commands.txt

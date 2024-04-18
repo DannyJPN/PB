@@ -1,0 +1,16 @@
+1)RSA algoritmus
+
+2)Hlavička a zápatí obsahuje řetězce BEGIN PRIVATE KEY a END PRIVATE KEY,indikují začátek a konec klíče
+
+3)65537?
+Nejsem si jistý cohledat za údaj.
+5)no že to je veřejný klíč.
+
+
+1.2
+________________________________________
+ openssl dgst -sha256 -sign private.pem  -out IPgen.sha256 IPgen.ps1 
+ openssl dgst -sha256 -verify public.pem -signature IPgen.sha256 IPgen.ps1 //Vyhodilo Verification OK 
+ echo "#">>IPgen.ps1
+ openssl dgst -sha256 -verify public.pem -signature IPgen.sha256 IPgen.ps1 //Vyhodilo Verification Failure
+  

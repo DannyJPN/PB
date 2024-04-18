@@ -1,0 +1,22 @@
+1)Pouzito DES s mody cipher block chain  a electronic code book
+Soubory IPgen*bin
+1.2)U ECB si můžu obrázek domyslet,protože je to přímá nahrazovací šifra,každý blok se vždy šifruje stejně.
+U CBC je to závislé na předchozím bloku,takže se o původním obrázku dovím 000000....
+pic_original = original
+pic-aes*.bmp = zašifrované originály
+pic-*newhead = obrázky,kde jsem měnil hlavičku GHEXem. Toto se nepodařilo
+pic*new = obrázky,kde jsem měnil hlavičku příkazem dd. ÚSPěšně.
+
+1.3)Myslel jsem,že u ECB dojde k likvidaci jen jednoho bajtu,ale zničilo to větší kousek.
+U CBC jsem očekával naopak delší zničený úsek,ale byl zhruab stejně dlouhé.
+IPgen.ps1 = originál 
+IPgen-aes* zašifrované
+IPgen*dam = poškozené zašifrované
+IPgen*decr = dešifrované poškozené texty
+
+2)
+SHA256(IPgen.ps1)= 8f965a5b098fbe40952c0242b5ed4f57a29880c6e79bc957b2e5b438a0789d0a
+SHA256(IPgen_dam.ps1)= 3fae3f3802366d36139d44e3bad4331b3fe39c0a88b12a7b84a2fe74e507e8ce
+IPgen = originál
+IPgen_dam = pozměněný soubor.
+Hashe mají 63 odlišných bitů

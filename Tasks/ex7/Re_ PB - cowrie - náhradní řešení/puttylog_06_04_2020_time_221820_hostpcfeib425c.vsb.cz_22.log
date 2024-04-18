@@ -1,0 +1,48 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.04.06 22:18:20 =~=~=~=~=~=~=~=~=~=~=~=
+login as: pb
+pb@pcfeib425c.vsb.cz's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-60-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Apr  6 21:56:57 CEST 2020
+
+  System load:    0.05      Processes:           248
+  Usage of /home: unknown   Users logged in:     2
+  Memory usage:   5%        IP address for eth0: 158.196.135.68
+  Swap usage:     0%
+
+  => /cdrom is using 85.8% of 15.33GB
+
+ * Kubernetes 1.18 GA is now available! See https://microk8s.io for docs or
+   install it with:
+
+     sudo snap install microk8s --channel=1.18 --classic
+
+ * Multipass 1.1 adds proxy support for developers behind enterprise
+   firewalls. Rapid prototyping for cloud operations just got easier.
+
+     https://multipass.run/
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+
+Last login: Mon Apr  6 21:56:57 2020 from 158.196.195.173
+]0;pb@pcfeib425c: ~pb@pcfeib425c:~$ 
+]0;pb@pcfeib425c: ~pb@pcfeib425c:~$ 
+]0;pb@pcfeib425c: ~pb@pcfeib425c:~$ 
+]0;pb@pcfeib425c: ~pb@pcfeib425c:~$ ls
+[0m[01;34mbin[0m  [01;34mcowrie[0m  examples.desktop
+]0;pb@pcfeib425c: ~pb@pcfeib425c:~$ cd  cowrie
+]0;pb@pcfeib425c: ~/cowriepb@pcfeib425c:~/cowrie$ ls
+[0m[01;34mbin[0m               [01;34metc[0m          Makefile                 requirements.txt  [01;34mvar[0m
+[01;36mCHANGELOG.rst[0m     [01;34mhoneyfs[0m      MANIFEST.in              [01;32msetup.py[0m
+[01;36mCONTRIBUTING.rst[0m  index.html   [01;36mREADME.rst[0m               [01;34mshare[0m
+[01;34mcowrie-env[0m        [01;36mINSTALL.rst[0m  requirements-dev.txt     [01;34msrc[0m
+[01;34mdocs[0m              [01;36mLICENSE.rst[0m  requirements-output.txt  tox.ini
+]0;pb@pcfeib425c: ~/cowriepb@pcfeib425c:~/cowrie$ [K]0;pb@pcfeib425c: ~/cowriepb@pcfeib425c:~/cowrie$ eit[K[Kxit
+logout

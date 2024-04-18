@@ -1,0 +1,13 @@
+1)Root logon úspěšný:
+změna parametru listen_endpoints,kde se přehodí port. (soubor cowrie/etc/cowrie.cfg)
+2)uživatelský login nepodporován,řešení:
+cp ~/cowrie/etc/userdb.example ~/cowrie/etc/userdb.txt && echo "kru0142:x:!kru0142" >> ~/cowrie/etc/userdb.txt && echo "kru0142:x:*" ~/cowrie/etc/userdb.txt
+Login se zakázaným heslem stále funguje,podle všeho je to python2/python3 kompatibilitní bug:
+https://github.com/cowrie/cowrie/issues/797
+
+3)Log soubor obsahuje jednotlivé záznamy o přihlášení dokonce včetně použitých příkazů a vyzkoušených hesel.
+Soubor: truelog.log.
+4)Soubor se sice stáhne,ale po relognutí zmizí.
+5)Wget nedokáže používat své parametry v honeypotu:možnost detekce.
+Dále má podezřele málo uživatelů,default uživatel Richard,vodítkem může být defaultní jméno serveru apod.
+6)ano,telnet,má v konfiguračních souborech svou vlastní analogickou konfiguraci (listen_endpoints atd)

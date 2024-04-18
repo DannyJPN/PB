@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/usr/sbin/brctl addif br0 eth0 eth1
+nohup /usr/sbin/tcpdump -i br0 -W 10 -C 50 -w /var/www/dump.pcap -s 0 port http or port ftp or port smtp or port telnet &
